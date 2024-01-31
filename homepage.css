@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 500;
+    height: 900%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600),rgba(0, 0, 0, 0.600)), url(rnhs.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+.navbar{
+    width: 93%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 90px;
+    border-radius: 200%;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(96, 145, 158);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-size: 60px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))url(jr.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.row{
+    display: flex;
+    margin-left: 60px;
+    height: 460px;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 120px;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(96, 145, 158);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 330px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 3px 3px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(jr.jpg);
+
+}
+.card2{
+    background-image: url(huhu.jpg);
+
+}
+.card3{
+    background-image: url(hehehe.jpg);
+
+}
+.card4{
+    background-image: url(hoho.jpg);
+
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+h2{
+    font-size: 51px;
+}
